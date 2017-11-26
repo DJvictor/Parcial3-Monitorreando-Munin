@@ -1,0 +1,4 @@
+---
+- name: install de apache2
+  apt: install apache2 
+

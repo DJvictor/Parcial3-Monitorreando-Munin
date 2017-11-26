@@ -1,0 +1,4 @@
+---
+- name: install de Mysql
+  apt: install Mysql 
+# tasks file for sqlserver

@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Lanzando servidor web..."
+docker run -d -P --name Pruebaweb01 -p 2221:22 -p 8000:80 $1
+echo "Servidor desplegado."
+echo
+echo "----------------------"
+echo "Lanzando servidor MySQL"
+docker run -d -P --name Pruebasql02 -p 2222:22 -p 3306:3306 $1
+echo "Servidor desplegado."
+echo
+echo
+echo "----------------------"
+echo "     Confirmando      "
+echo "----------------------"
+docker ps
+echo
+echo "----------------------"
